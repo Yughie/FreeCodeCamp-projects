@@ -3,17 +3,32 @@
     padding: 0;
 }
 
+body{
+    overflow-x: hidden;
+}
+.welcome-section{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+        60deg,
+        rgb(57, 54, 54),
+        rgb(32, 31, 31)
+    );
+    text-align: center;
+}
 
 
 .navbar{
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
-    height: 80px;
+    height: 70px;
     background-color: rgb(218, 87, 87);
     color: white;
     font-family: sans-serif;
     border-bottom: 1px solid rgb(218, 87, 87);
+    z-index: 1;
     
 }
 
@@ -25,6 +40,7 @@
     font-size: 25px;
     position: absolute;
     right: 0;
+    margin-right: 20px;
     
     
 }
@@ -35,7 +51,7 @@
     
 }
 .navbar li{
-    padding: 25px;
+    padding: 20px;
     border: none;
     border: 1px solid rgb(218, 87, 87);
     
@@ -43,21 +59,9 @@
 .navbar li:hover{
     background-color: rgb(63, 63, 78);
     border: 1px solid rgb(63, 63, 78);
-    
-   
-    
+
 }
 
-.welcome-section{
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(
-        60deg,
-        rgb(57, 54, 54),
-        rgb(32, 31, 31)
-    );
-    text-align: center;
-}
 
 .message-container{
 
@@ -65,6 +69,7 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
+
     
 }
 .message-container h1{
@@ -72,10 +77,111 @@ transform: translate(-50%, -50%);
     font-size: 80px;
     font-family: sans-serif;
 }
+
 .message-container p{
     font-size: 30px;
     color: rgb(218, 87, 87);;
 }
 
+.radial-gradient{
+    width: 400px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(rgb(96, 90, 90), rgb(253, 241, 241));
+    filter: blur(100px);
+    opacity: .8;
+    position: relative;
+    
+}
+
+.gradient-one{
+    left: -15%;
+    top: 50%;
+    transform: rotate(110deg);
+}
+
+.gradient-two{
+    right: -90%;
+    bottom: -60%;
+}
 
 
+/*project part */
+
+.projects{
+    width: 100%;
+    height: auto;
+    background-color:  rgb(80, 84, 126);
+    z-index: 1;
+    text-align: center;
+    padding-bottom: 100px;
+    color: whitesmoke;
+}
+.projects h1{
+    padding: 50px;
+    padding-bottom: 10px;
+    width: 650px;
+    margin: auto;
+    font-size: 50px;
+    border-bottom: 4px solid whitesmoke;
+    
+}
+.projects-container{
+    width: 1400px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 30px 30px;
+    justify-content: center;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+}
+
+.project{
+    width: 400px;
+    height: 500px;
+    background-size: 100% 100%;
+    background-color: gray;
+    border-radius: 5px;
+}
+
+.project-image{
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.project-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project h3{
+    margin: 7px;
+}
+
+.project span{
+    color: gray;
+    font-size: 40px;
+    vertical-align: middle;
+    padding: 20px;
+    display: hidden;
+}
+.project span:hover{
+    color: rgb(236, 164, 30);
+}
+
+@media (max-width: 1399px){
+
+    .projects-container{
+        grid-template-columns: 30% 30%;
+        
+        
+        
+    }
+
+}
