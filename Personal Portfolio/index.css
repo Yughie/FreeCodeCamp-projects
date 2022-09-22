@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <section class="welcome-section" id="welcome">
+            <nav class="navbar">
+                <ul>
+                    <a href="#welcome" target="_blank">
+                        <li>About</li>
+                    </a>
+                    <a href="#work" target="_blank">
+                        <li>Work</li>
+                    </a>
+                    <a href="#Contact" target="_blank">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </nav>
+            <div class="message-container">
+                <h1>Hi I am Yughie</h1>
+                <p>aspring full stack developer</p>
+            </div>
+        </section>
+
+        <section class="projects">
+
+        </section>
+
+    </body>
+</html>
