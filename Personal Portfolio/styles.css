@@ -181,73 +181,7 @@ body{
     color:rgb(236, 164, 30);
 }
 
-@media (max-width: 1576px){
-    .project span{
-        font-size: 30px;
-    }
-}
-@media (max-width: 1510px){
-    .project span{
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 1399px){
-
-    .projects-container{
-        grid-template-columns: 30% 30%;
-    }
-    .projects-container{
-        width: 99%;
-    }
-
-    .message-container h1{
-        color: white;
-        font-size: 8vw;
-    }
-    
-    .message-container p{
-        font-size: 4vw; 
-    }
-}
-
-
-@media (max-width: 800px){
-     .projects-container{
-         grid-template-columns: 1fr;
-         grid-template-rows: repeat(6, 1fr);
-         width: 60%;
-     }
-
-     .navbar ul{ 
-        display: grid;
-        grid-template-columns: auto auto auto;
-        width: 400px;
-        list-style: none;
-        font-size: 25px;
-        position: absolute;
-        right: 0;
-        margin-right: 20px;  
-    }
-
-     .navbar ul{ 
-        width: 400px;
-        position: relative;
-        margin: auto;
-        font-size: large;
-       margin-top: 8px;
-    }
-    .message-container h1{
-        color: white;
-        font-size: 10vw;
-    }
-    
-    .message-container p{
-        font-size: 5vw; 
-    }
-    
-    
-}
+/* CONTACTS AND FOOTER */
 
 .contact-footer-section{
     width: 100vw;
@@ -304,4 +238,86 @@ footer div{
 }
 .social-media i, .social-media h3{
     display: inline;
+}
+
+
+@media (max-width: 1576px){
+    .project span{
+        font-size: 30px;
+    }
+}
+@media (max-width: 1510px){
+    .project span{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1399px){
+
+    .projects-container{
+        grid-template-columns: 30% 30%;
+    }
+    .projects-container{
+        width: 99%;
+    }
+
+    .message-container h1{
+        color: white;
+        font-size: 8vw;
+    }
+    
+    .message-container p{
+        font-size: 4vw; 
+    }
+    .contact-content h1{
+        font-size: 6vw;
+    }
+    .contact-content p{
+        font-size: 2vw;
+    }
+    
+    .social-medias-container{
+        width: 56vw;
+        font-size: 1.3vw;
+    }
+    
+    
+}
+
+
+@media (max-width: 800px){
+     .projects-container{
+         grid-template-columns: 1fr;
+         grid-template-rows: repeat(6, 1fr);
+         width: 60%;
+     }
+
+     .navbar ul{ 
+        display: grid;
+        grid-template-columns: auto auto auto;
+        width: 400px;
+        list-style: none;
+        font-size: 25px;
+        position: absolute;
+        right: 0;
+        margin-right: 20px;  
+    }
+
+     .navbar ul{ 
+        width: 400px;
+        position: relative;
+        margin: auto;
+        font-size: large;
+       margin-top: 8px;
+    }
+    .message-container h1{
+        color: white;
+        font-size: 10vw;
+    }
+    
+    .message-container p{
+        font-size: 5vw; 
+    }
+    
+    
 }
