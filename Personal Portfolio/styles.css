@@ -176,14 +176,14 @@ body{
 }
 
 .project span{
-    vertical-align: middle;
     padding: 15px;
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 900;
 }
 .project-tile:nth-of-type(2){
     margin-left: -10px;
 }
+
 .project a:hover{
     color:rgb(236, 164, 30);
 }
@@ -200,14 +200,17 @@ body{
 .contacts{
     height: 90vh;   
 }
+
 .contact-content{
     position: relative;
     top: 35%; 
 }
+
 .contact-content h1{
     font-size: 4vw;
     transition: .3s;
 }
+
 .contact-content p{
     font-size:1.3vw;
     font-style: italic;
@@ -223,10 +226,17 @@ body{
     transition: 1s ease-in-out;
     font-size: 1vw;
 }
+
+.social-media a{
+    color: white;
+    text-decoration: none;
+}
+
 .social-media{
     height: 40px;
     cursor: pointer;
 }
+
 .social-media:hover{
     transform: translateY(20%);
     transition: .3s ease;
@@ -248,7 +258,6 @@ footer{
 
 @media (max-width: 1399px){
 
-  
     .projects-container{
         grid-template-columns: 30% 30%;
     }
@@ -264,9 +273,11 @@ footer{
     .message-container p{
         font-size: 4vw; 
     }
+
     .contact-content h1{
         font-size: 6vw;
     }
+
     .contact-content p{
         font-size: 2vw;
     }
@@ -285,46 +296,52 @@ footer{
         font-size: 35px;
     }
 }
+
 @media (max-width: 1103px){
     .project span{
         font-size: 30px;
     }
 }
+
 @media (max-width: 1028px){
     .project span{
         font-size: 25px;
     }
 }
+
 @media (max-width: 952px){
     .project span{
         font-size: 20px;
     }
 }
+
 @media (max-width: 878px){
     .project span{
         font-size: 14px;
     }
-
 }
+
 @media (max-width: 800px){
+
     .Projects h1{
         font-size: 3.85vw;
-        width: 50%;
-        
+        width: 50%; 
     }
+
      .projects-container{
          grid-template-columns: 1fr;
          grid-template-rows: repeat(6, 1fr);
          width: 60%;
      }
+
      .project span{
         font-size: 25px;
     }
+
     .project-tile span, .project-tile h3{
         transform: scale(2);
     }
    
-    
      #navbar ul{ 
         display: grid;
         grid-template-columns: auto auto auto;
@@ -343,6 +360,7 @@ footer{
         font-size: large;
        margin-top: 8px;
     }
+
     .message-container h1{
         color: white;
         font-size: 10vw;
@@ -350,6 +368,21 @@ footer{
     
     .message-container p{
         font-size: 5vw; 
+    }
+
+    /*CONTACT FOOTER */
+
+    .contact-content h1{
+        font-size: 9vw;
+    }
+
+    .contact-content p{
+        font-size: 3vw;
+    }
+    
+    .social-medias-container{
+        font-size: 2vw;
+        width: 80%;
     }
     
     footer{
